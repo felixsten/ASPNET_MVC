@@ -613,14 +613,6 @@ footer .container .social-media {
   align-items: center;
   height: 100%;
 }
-#signin .container form #external-signin {
-  display: flex;
-  gap: 1rem;
-}
-#signin .container form #external-signin a {
-  flex: 1;
-}
-
 #signup {
   height: 100%;
 }
@@ -664,4 +656,19 @@ footer .container .social-media {
 }
 .courses .container .course-list .course .course-prices .original-price {
   color: #6366F1;
+}
+
+#detailspage .container {
+  display: flex;
+}
+#detailspage .container #aside-profile {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+#detailspage .container #account-details {
+  width: 100%;
+  margin-top: 32px;
+}
+#detailspage .container #account-details .details .form-buttons button {
+  margin-bottom: 12px;
 }

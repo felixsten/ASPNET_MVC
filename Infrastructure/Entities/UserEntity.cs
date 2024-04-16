@@ -13,7 +13,6 @@ public class UserEntity : IdentityUser
     [ProtectedPersonalData]
     public string LastName { get; set; } = null!;
     
-    public string? Phone { get; set; }
     public string? Biography { get; set; }
     public DateTime? Created { get; set; }
     public DateTime? Modified { get; set; }

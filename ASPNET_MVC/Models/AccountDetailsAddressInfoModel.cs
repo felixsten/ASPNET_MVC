@@ -7,7 +7,10 @@ public class AccountDetailsAddressInfoModel
     [Display(Name = "Address 1", Order = 0)]
     [Required(ErrorMessage = "Invalid address")]
     public string StreetName { get; set; } = null!;
-    
+
+    [Display(Name = "Address 2", Order = 0)]
+    public string? StreetName_2 { get; set; }
+
     [Display(Name = "Postal code", Order = 1)]
     [Required(ErrorMessage = "Invalid first name")]
     [DataType(DataType.PostalCode)]

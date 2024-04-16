@@ -1,0 +1,28 @@
+﻿
+
+#detailspage {
+
+    .container {
+        display: flex;
+
+        #aside-profile {
+            margin-top: 32px;
+            margin-right: 32px;
+        }
+
+        #account-details {
+            width: 100%;
+            margin-top: 32px;
+
+            .details {
+
+                .form-buttons {
+
+                    button {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

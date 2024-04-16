@@ -30,13 +30,13 @@
         <div class="account-buttons">
             @if (_signInManager.IsSignedIn(User))
             {
-                <a class="btn-theme" asp-controller="Auth" asp-action="SignOut"><i class="bi bi-person"></i><span>Sign out</span></a>
-                <a class="btn-gray" asp-controller="Account" asp-action="Details"><i class="bi bi-box-arrow-in-right"></i><span>Account</span></a>
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignOut"><img src="~/images/icon-signin.svg"><span>Sign out</span></a>
+                <a class="btn-gray" asp-controller="Account" asp-action="Details"><img src="~/images/icon-user.svg"><span>Account</span></a>
             }
             else
             {
-                <a class="btn-theme" asp-controller="Auth" asp-action="SignIn"><i class="bi bi-person"></i><span>Sign in</span></a>
-                <a class="btn-gray" asp-controller="Auth" asp-action="SignUp"><i class="bi bi-box-arrow-in-right"></i><span>Sign up</span></a>
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignIn"><img src="~/images/icon-signin.svg"><span>Sign in</span></a>
+                <a class="btn-gray" asp-controller="Auth" asp-action="SignUp"><img src="~/images/icon-user.svg"><span>Sign up</span></a>
             }
 
             
