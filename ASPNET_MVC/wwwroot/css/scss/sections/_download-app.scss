@@ -1,0 +1,38 @@
+#download-app {
+    padding-top: 100px;
+    background-color: #F3F6FF;
+    padding-bottom: 70px;
+
+    .container {
+        display: flex;
+
+        img {
+            margin-right: 100px;
+        }
+
+        .info-app {
+            display: grid;
+            grid-template-areas:
+             'header header'
+             'review image'
+             'review image';
+            
+            h1 {
+                grid-area: header;
+                padding-right: 250px;
+            }
+
+            .review-app {
+                i {
+                    color: #FFBA08;
+                    margin-right: 5px;
+                }
+            }
+
+            .review-image {
+                margin-top: 70px;
+                
+            }
+        }
+    }
+}

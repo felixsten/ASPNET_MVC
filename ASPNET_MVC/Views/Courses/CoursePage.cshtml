@@ -1,0 +1,47 @@
+﻿@model CoursePageViewModel
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<section class="courses">
+    <div class="container">
+        <h1>Courses</h1>
+        <div class="course-list">
+
+            @foreach(var item in Model.Courses)
+            {
+                <div class="course">
+                    @if (item.IsBestseller)
+                    {
+                        <div class="best-seller">Best Seller</div>
+                    }
+                    <img class="course-image" src="~/images/@item.ImageName" />
+                    <div class="content">
+                        <h2 class="course-title">@item.Title</h2>
+                        <div class="course-author">by @item.Author</div>
+                        <div class="course-prices">
+                            @if (item.DiscountPrice > 0)
+                            {
+                                <div class="discount-price">$@item.DiscountPrice</div>
+                            }
+
+                            <div class="original-price">$@item.OriginalPrice</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-hours">@item.Hours hours</div>
+                            <div class="course-likes">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <span>@($"{item.LikesInProcent}%")</span>
+                                <span>(@($"{item.LikesInNumbers / 1000}")K)</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</section>

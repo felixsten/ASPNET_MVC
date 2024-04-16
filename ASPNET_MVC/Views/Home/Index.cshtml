@@ -1,0 +1,176 @@
+﻿@using ASPNET_MVC.ViewModels
+@model SubscriberModel
+
+<section id="newsletter">
+    <div class="container">
+        <form asp-action="Subscribe" asp-controller="Home" method="post">
+            <input asp-for="@Model.Email" />
+            <button class="btn-theme-s" type="submit">Subscribe to news</button>
+        </form>
+    </div>
+</section>
+
+<section id="showcase">
+    <div class="container">
+        <div class="content">
+            <h1>Task Management Assistant You Gonna Love</h1>
+            <p>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p>
+            <div class="showcase-button">
+                <a class="btn-theme-s" href="#">Get started for free</a>
+            </div>
+            <h6>Largest companies use our tool to work efficiently</h6>
+            <div>
+                <img src="images/brand_1.svg">
+                <img src="images/brand_2.svg">
+                <img src="images/brand_3.svg">
+                <img src="images/brand_4.svg">
+            </div>
+        </div>
+    </div>
+    <img class="background-image" src="images/showcase-taskmaster.svg">
+</section>
+
+<section id="features">
+    <div class="container">
+        <h1>What Do You Get with Our Tool?</h1>
+        <p>Make sure all your tasks are organized so you can set the priorities and focus on important.</p>
+        <div class="tool-features">
+            <div class="box">
+                <img src="images/chat.svg" alt="">
+                <h5>Comments on Tasks</h5>
+                <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+            </div>
+            <div class="box">
+                <img src="images/presentation.svg" alt="">
+                <h5>Tasks Analytics</h5>
+                <p>Non imperdiet facilisis nulla tellus Morbi scelerisque eget adipiscing vulputate.</p>
+            </div>
+            <div class="box">
+                <img src="images/add-group.svg" alt="">
+                <h5>Multiple Asignees</h5>
+                <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+            </div>
+            <div class="box">
+                <img src="images/bell.svg" alt="">
+                <h5>Notifications</h5>
+                <p>Diam, suspendisse velit cras ac. Lobortis diam volutpat, eget pellentesque viverra.</p>
+            </div>
+            <div class="box">
+                <img src="images/tests.svg" alt="">
+                <h5>Sections & Subtasks</h5>
+                <p>Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus.</p>
+            </div>
+            <div class="box">
+                <img src="images/shield.svg" alt="">
+                <h5>Data Security</h5>
+                <p>Aliquam malesuada neque eget elit nulla vestibulum nunc cras.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="manage-work">
+    <div class="container">
+        <img src="images/manage_work.svg">
+        <div class="work-info">
+            <h2>Manage Your Work</h2>
+            <div class="work-text">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Powerful project management</p>
+            </div>
+            <div class="work-text">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Transparent work management</p>
+            </div>
+            <div class="work-text">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Manage work & focus on the most important tasks</p>
+            </div>
+            <div class="work-text">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Track your progress with interactive charts</p>
+            </div>
+            <div class="work-text">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Easiest way to track time spent on tasks</p>
+            </div>
+
+
+
+
+            <div class="work-button">
+                <a class="btn-theme-s" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="download-app">
+    <div class="container">
+        <img src="images/phoneapp.svg" alt="">
+        <div class="info-app">
+            <h1>Download Our App for Any Devices:</h1>
+            <div class="review-app">
+                <p>App Store</p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <h4>Editor's Choice</h4>
+                <p>rating 4.7, 187K+ reviews</p>
+            </div>
+            <div class="review-image">
+                <img src="images/appstore.svg" alt="">
+            </div>
+            <div class="review-app">
+                <p>Google Play</p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <h4>App of the Day</h4>
+                <p>rating 4.8, 30K+ reviews</p>
+            </div>
+            <div class="review-image">
+                <img src="images/googleplay.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="integrate-tools">
+    <div class="tools-header">
+        <h1>Integrate Top Work Tools</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+    </div>
+    <div class="container">
+        <div class="worktool">
+            <img src="images/Google.svg" alt="">
+            <p>Lorem magnis pretium sed curabitur nunc facilisi nunc cursus sagittis.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/Zoom.svg" alt="">
+            <p>In eget a mauris quis. Tortor dui tempus quis integer est sit natoque placerat dolor.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/Slack_Mark.svg" alt="">
+            <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/gmail.svg" alt="">
+            <p>Rutrum interdum tortor, sed at nulla. A cursus bibendum elit purus cras praesent.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/Trello.svg" alt="">
+            <p>Congue pellentesque amet, viverra curabitur quam diam scelerisque fermentum urna.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/MailChimp.svg" alt="">
+            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/Dropbox.svg" alt="">
+            <p>Ut in turpis consequat odio diam lectus elementum. Est faucibus blandit platea.</p>
+        </div>
+        <div class="worktool">
+            <img src="images/Evernote.svg" alt="">
+            <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,23 @@
+#features {
+    background-color: #E2E5F1;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container {
+        
+        .tool-features {
+            display: grid;
+            grid-template-columns: auto auto auto;
+           
+            .box {
+                text-align: center;
+                padding: 40px;
+
+                &:hover {
+                    background-color: #FFFFFF;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}

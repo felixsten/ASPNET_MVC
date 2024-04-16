@@ -1,0 +1,37 @@
+#showcase {
+    display: flex;
+
+    .container {
+        margin-top: 200px;
+        margin-left: 300px;
+        margin-right: 50px;
+        
+
+        .content {
+            
+            h1 {
+                margin-right: 150px;
+                margin-bottom: 20px;
+                
+            }
+            p {
+                margin-bottom: 40px;
+            }
+
+            .showcase-button {
+                margin-bottom: 80px;
+                display: flex;
+            }
+
+            h6 {
+                margin-bottom: 30px;
+            }
+
+            div {
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

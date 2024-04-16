@@ -1,0 +1,46 @@
+﻿
+
+@inject SignInManager<UserEntity> _signInManager
+
+<header>
+    <div class="container">
+        <a id="logo" asp-controller="Home" asp-action="Index"><img src="~/images/silicon-logo-light_mode.svg" alt=""></a>
+
+        <div id="menu">
+            <nav>
+                <a class="menu-link" asp-controller="Home" asp-action="Index">Overview</a>
+                <a class="menu-link" asp-controller="Home" asp-action="Index">Features</a>
+                @if (User.Identity!.IsAuthenticated)
+                {
+                    <a class="menu-link" asp-controller="Courses" asp-action="CoursePage">Courses</a>
+                }
+                <a class="menu-link" href="#">Contact</a>
+                
+            </nav>
+        </div>
+
+        <div class="btn-switch">
+            <label class="switch" for="switch-mode">
+                <input type="checkbox" id="switch-mode" />
+                <div class="slider round"></div>
+            </label>
+            <label>Dark</label>
+        </div>
+
+        <div class="account-buttons">
+            @if (_signInManager.IsSignedIn(User))
+            {
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignOut"><i class="bi bi-person"></i><span>Sign out</span></a>
+                <a class="btn-gray" asp-controller="Account" asp-action="Details"><i class="bi bi-box-arrow-in-right"></i><span>Account</span></a>
+            }
+            else
+            {
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignIn"><i class="bi bi-person"></i><span>Sign in</span></a>
+                <a class="btn-gray" asp-controller="Auth" asp-action="SignUp"><i class="bi bi-box-arrow-in-right"></i><span>Sign up</span></a>
+            }
+
+            
+        </div>
+
+    </div>
+</header>
