@@ -54,7 +54,7 @@ public class AuthController: Controller
                 FirstName = viewModel.Form.FirstName,
                 LastName = viewModel.Form.LastName,
                 Email = viewModel.Form.Email,
-                UserName = viewModel.Form.Email // Set the UserName to the email address
+                UserName = viewModel.Form.Email 
             };
 
             var result = await _userManager.CreateAsync(userEntity, viewModel.Form.Password);
@@ -64,7 +64,7 @@ public class AuthController: Controller
             }
             else
             {
-                // If user creation fails, add errors to ModelState and return the view
+                
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
